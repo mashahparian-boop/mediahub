@@ -26,17 +26,14 @@ jobs:
           channel: 'stable'
           cache: true
 
-      - name: Flutter doctor
-        run: flutter doctor -v
-
       - name: Get dependencies
         run: flutter pub get
 
-      - name: Build APK with verbose logs
+      - name: Build APK
         run: flutter build apk --release --verbose
 
-      - name: Upload APK
+      - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: mediahub-release-apk
+          name: MediaHub-Release-APK
           path: build/app/outputs/flutter-apk/app-release.apk
