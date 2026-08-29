@@ -1,5 +1,5 @@
 name: mediahub
-description: "CityDigii MediaHub Content Manager & Publisher"
+description: MediaHub - Social Media Content Distribution Tool for CityDigii
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -11,12 +11,13 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  intl: ^0.20.2
-  provider: ^6.1.1
+
+  provider: ^6.1.2
   shared_preferences: ^2.2.2
-  google_fonts: ^6.1.0
-  image_picker: ^1.0.7
-  http: ^1.2.0
+  dio: ^5.4.0
+  intl: ^0.19.0
+  uuid: ^4.3.3
+  file_picker: ^8.0.0
 
 dev_dependencies:
   flutter_test:
